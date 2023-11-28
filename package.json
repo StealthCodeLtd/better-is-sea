@@ -2,19 +2,20 @@
   "name": "is-sea",
   "version": "0.3.1",
   "description": "Check whether a geographic coordinate is in the sea or not on the earth.",
-  "main": "index.js",
+  "main": "index.mjs",
+  "types": "index.d.mts",
   "dependencies": {
     "@geo-maps/earth-seas-10m": "^0.6.0",
-    "geojson-geometries-lookup": "^0.2.0"
+    "geojson-geometries-lookup": "^0.5.0"
   },
   "devDependencies": {
     "ava": "*",
-    "browserify": "^14.5.0",
-    "codecov": "^3.0.0",
-    "fs-extra": "^4.0.2",
-    "i18n-iso-countries": "^3.2.2",
-    "leaflet": "^1.2.0",
-    "nyc": "^11.3.0",
+    "browserify": "^17.0.0",
+    "codecov": "^3.8.2",
+    "fs-extra": "^11.2.0",
+    "i18n-iso-countries": "^7.7.0",
+    "leaflet": "^1.9.4",
+    "nyc": "^15.1.0",
     "xo": "*"
   },
   "engines": {
