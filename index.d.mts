@@ -1,4 +1,4 @@
-export default isSea;
+export default isWaterBody;
 /**
  * Returns whether the given point is in the sea or not.
  * @public
@@ -6,4 +6,4 @@ export default isSea;
  * @param {number} lng  The longitude of the point.
  * @return {boolean} True if the point is in the sea, false otherwise.
  */
-declare function isSea(lat: number, lng: number): boolean;
+declare function isWaterBody(lat: number, lng: number): boolean;
