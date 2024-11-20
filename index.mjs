@@ -1,22 +1,22 @@
-import GeoJsonLookup from 'geojson-geometries-lookup';
-import getMap from '@geo-maps/earth-seas-10m';
+import GeoJsonLookup from "geojson-geometries-lookup";
+import getMap from "@geo-maps/earth-waterbodies-1m";
 
 let landLookup = null;
 
 /**
- * Returns whether the given point is in the sea or not.
+ * Returns whether the given point is in a water body or not.
  * @public
  * @param {number} lat  The latitude of the point.
  * @param {number} lng  The longitude of the point.
- * @return {boolean} True if the point is in the sea, false otherwise.
+ * @return {boolean} True if the point is in a water body, false otherwise.
  */
-function isSea(lat, lng) {
+function isWaterBody(lat, lng) {
   if (landLookup === null) {
     const map = getMap();
     landLookup = new GeoJsonLookup(map);
   }
 
-  return landLookup.hasContainers({type: 'Point', coordinates: [lng, lat]});
+  return landLookup.hasContainers({ type: "Point", coordinates: [lng, lat] });
 }
 
-export default isSea;
+export default isWaterBody;

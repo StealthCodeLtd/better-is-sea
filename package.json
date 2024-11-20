@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "types": "index.d.mts",
   "dependencies": {
-    "@geo-maps/earth-seas-10m": "^0.6.0",
+    "@geo-maps/earth-waterbodies-1m": "^0.6.0",
     "geojson-geometries-lookup": "^0.5.0"
   },
   "devDependencies": {
