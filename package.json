@@ -1,5 +1,5 @@
 {
-  "name": "is-sea",
+  "name": "better-is-sea",
   "version": "0.3.1",
   "description": "Check whether a geographic coordinate is in the sea or not on the earth.",
   "main": "index.mjs",
